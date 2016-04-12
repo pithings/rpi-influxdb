@@ -1,6 +1,6 @@
 FROM resin/rpi-raspbian:jessie
 
-ENV INFLUXDB_VERSION 0.10.0
+ENV INFLUXDB_VERSION 0.12.0
 ADD package/influxdb_${INFLUXDB_VERSION}_armhf.deb /tmp/influxdb_${INFLUXDB_VERSION}_armhf.dep
 RUN mkdir -p /var/lib/influxdb
 RUN mkdir -p /var/log/influxdb
